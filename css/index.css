@@ -160,6 +160,32 @@ h1, h2, h3, h4, h5 {
     }
 } */
   
+.container .logo {
+    width: 100%;
+    height: auto 0;
+  } 
+
+  @media (max-width: 500px) {
+      .container .logo {
+          display: flex;
+          width: 20%;
+          height: 20%;
+          flex-direction: column;
+          justify-content: center;
+          
+      }
+  }
+
+  @media (min-width: 800px) {
+    .container .logo {
+        display: flex;
+        width: 20%;
+        height: 20%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+    }
+}
 
 header .logo {
     margin-top: 25px;
@@ -169,11 +195,23 @@ header .logo {
   
   @media (max-width: 500px) {
       header .logo {
-          display: flex;
+          display: none;
           width: 50%;
 
       }
   }
+
+  @media (min-width: 800px) {
+    header .logo {
+        display: flex;
+            flex-direction: column;
+            /* border: 1px solid green; */
+            content: none;
+            margin: 0 auto;
+            padding: 20px;
+
+    }
+}
 
 
 header nav {
@@ -191,6 +229,18 @@ header nav {
         flex-direction: column;
         align-items: center;
         width: 50%;
+        /* border: 1px dotted black; */
+    }
+}
+
+@media (min-width: 800px) {
+    header nav {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        width: 90%;
+        justify-content: space-evenly;
         /* border: 1px dotted black; */
     }
 }
@@ -215,6 +265,16 @@ header nav a {
     }
 }
 
+@media (min-width: 800px) {
+    header nav a {
+        margin: 10px 0 0 0;
+        font-size: 12pt;
+        padding: 10pt;
+        justify-content: space-evenly;
+        align-items: center;
+    
+    }
+}
 
 header nav a:hover {
   text-decoration: underline;
@@ -234,11 +294,11 @@ header nav a:first-child {
 
 .cta .cta-text {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: center;
   font-size: 77px;
   margin-top: 120px;
   text-align: center;
-  padding: 0px 75px;
+  padding: auto 20px;
 }
 
 /* Innovation on Demand */
@@ -246,8 +306,8 @@ header nav a:first-child {
     .cta .cta-text {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        border: 2px solid green;
+        align-items: left;
+        /* border: 2px solid green; */
         width: 50%;
         height: auto;
         margin: 20px;
@@ -255,6 +315,41 @@ header nav a:first-child {
         
       }
     }
+
+    @media (min-width: 800px) {
+        .cta .cta-text {
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid green; */
+            /* width: 30%; */
+            /* height: auto; */
+            margin-top: 50px;
+            font-size: 30pt;
+            
+          }
+        }
+
+    /* .cta .cta-text h1 {
+        display: flex;
+        /* vertical-align: top; */
+        font-size: 40pt;
+        /* margin-top: 10px; */
+        /* text-align: center; */
+        /* padding: 0px 75px; */
+        /* width: 50%; */
+        /* height: 0 auto; */
+        
+      /* } */
+
+      /* @media (min-width: 800px) {
+        .cta .cta-text h1 {
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid green; */
+            /* width: 30%; */
+            /* height: auto; */
+            /* border: 1px solid green; */
+
 
 .cta .cta-text button {
   background: white;
@@ -264,6 +359,32 @@ header nav a:first-child {
   font-size: 17px;
   border: 1px solid black;
   cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .cta .cta-text button {
+        display: flex;
+        width: 50%;
+        margin: 10 30 10 100;
+        padding: 10px 30px;
+        border: 1pt solid black;
+
+    }
+}
+
+@media (min-width: 800px) {
+    .cta .cta-text button {
+        display: flex;
+        width: 130px;
+        /* margin: 10 0; */
+        padding: 10px 30px;
+        border: 1pt solid black;
+        flex-direction: column;
+        justify-content: center;
+        
+        
+
+    }
 }
 
 .cta .cta-text button:hover {
@@ -311,8 +432,10 @@ header nav a:first-child {
 }
 
 @media (max-width: 500px) {
-    display: flex;
-    width: 50%;
+    .main-content .middle-img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .main-content .bottom-content {
@@ -336,6 +459,17 @@ header nav a:first-child {
       }
     }
 
+    @media (min-width: 800px) {
+        .main-content .bottom-content .text-content {
+            display: flex wrap;
+            width: 30%;
+            /* flex-direction: row; */
+            /* justify-content: center; */
+            /* align-items: left; */
+            /* border: 1px dotted red; */
+          }
+        }
+    
 
 /* .main-content .bottom-content .text-content:last-child {
   margin-right: 0;
